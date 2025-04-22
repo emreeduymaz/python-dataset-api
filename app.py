@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 
 app = Flask(__name__)
-model = tf.keras.models.load_model("outfit_model.h5")
+model = tf.keras.models.load_model("outfit_model_layers.h5")
 
 @app.route("/predict", methods=["POST"])
 def predict():
